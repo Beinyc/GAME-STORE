@@ -5,29 +5,27 @@ import {useParams} from 'react-router-dom';
 import { HomePage } from './components/home-page/home-page';
 import { Header } from './components/header/header';
 import { store } from './redux';
+import { GamePage } from './components/GamePage/GamePage';
+import { OrderPage } from './components/OrderPage/OrderPage';
 
 
 export default function App() {
   return (
-    <Provider store={store}>
+    <div className='App'>
+      <Provider store={store}>
         <Router>
-          <div className='App'>
-            <Header/>
-                {/* <nav>
-                  <ul>
-                    <li>
-                      <Link to="/">Header</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Home</Link>
-                    </li>
-                  </ul>
-                </nav> */}
+        <Header/>
               <Routes>
-                  <Route path="/" element={<HomePage />} />
+                  <Route exact path="/" element={<HomePage />} />
               </Routes>
-          </div>
+              <Routes>
+                  <Route exact path="/app/:title" element={<GamePage />} />
+              </Routes>
+              <Routes>
+                  <Route exact path="/order" element={<OrderPage />} />
+              </Routes>
       </Router>
     </Provider>
+    </div>
   );
 }
