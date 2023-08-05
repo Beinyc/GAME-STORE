@@ -2,6 +2,7 @@ import React from "react";
 import './OrderPage.css';
 import { useSelector } from "react-redux";
 import { calcTotalPrice } from "../utils";
+import { OrderItem } from "../order-item/order-item";
 
 export const OrderPage = () => {
     const items = useSelector(state => state.cart.itemsInCart);
@@ -12,9 +13,8 @@ export const OrderPage = () => {
 
     return (
           <div className="order-page">
-            В процессе доработки
-            {/* <div className="order-page__left">
-                {items.map(game => <OrderPage game={game}/>)}
+            <div className="order-page__left">
+                {items.map(game => <OrderItem game={game}/>)}
             </div>
             <div className="order-page__right">
                 <div className="oreder-page__total-price">
@@ -22,7 +22,7 @@ export const OrderPage = () => {
                         {items.lenght} товаров на сумму {calcTotalPrice(items)} руб.
                     </span>
                 </div>
-            </div> */}
+            </div>
           </div>
       );
     }
