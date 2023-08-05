@@ -1,0 +1,6 @@
+@media (max-width: 370px) {
+    .order-page__left {
+        display: flex;
+        flex-direction: column;
+    }
+}

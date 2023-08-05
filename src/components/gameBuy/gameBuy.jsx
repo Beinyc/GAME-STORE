@@ -22,6 +22,7 @@ export const GameBuy = ({ game }) => {
         <div className="game-buy">
           <span className='game-buy__price'>{game.price} руб.</span>
           <Button 
+            className='game-buy__button'
             type={isItemInCart ? "secondary" : "primary"}
             onClick={ handleClick }
           >

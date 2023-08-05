@@ -14,3 +14,14 @@
     font-size: 18px;
     font-weight: bold;
 }
+
+@media (max-width: 350px) {
+    .cart-block__total-price {
+        font-size: 8px;
+        margin-left: 4px;
+    }
+    .cart-block__icon {
+        height: 14px;
+        margin-left: 0px;
+    }
+}

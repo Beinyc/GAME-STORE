@@ -21,6 +21,25 @@
     font-weight: bold;
 }
 
+@media (max-width: 350px){
+    .game-item__title {
+        font-size: 11px;
+    }
+    .game-item {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 260px){
+    .game-item__title {
+        font-size: 7px;
+    }
+    .game-item {
+        width: 170px;
+    }
+}
+
 .game-item__genre {
     margin-top: 10px;
     display: flex;

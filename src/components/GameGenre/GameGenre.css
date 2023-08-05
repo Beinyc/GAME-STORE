@@ -8,3 +8,20 @@
 .game-genre:not(:last-child) {
     margin-right: 7px;
 }
+
+@media (max-width: 350px){
+    .game-genre {
+        font-size: 7px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 260px){
+    .game-genre {
+        font-size: 6px;
+        margin-bottom: 10px;
+    }
+    .btn--small {
+        font-size: 7px;
+    }
+}

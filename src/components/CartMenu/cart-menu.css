@@ -20,3 +20,17 @@
     justify-content: space-between;
     margin-bottom: 15px;
 }
+
+@media (max-width: 600px) {
+    .cart-menu {
+        width: 200px;
+        left: -100px;
+    }
+}
+
+@media (max-width: 350px) {
+    .cart-menu {
+        width: 170px;
+        left: -110px;
+    }
+}
